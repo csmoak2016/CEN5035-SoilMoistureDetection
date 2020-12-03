@@ -87,42 +87,42 @@ public class HomeScreen extends JFrame {
     gbc_dtPicker.gridy = 0;
     contentPane.add(dtPicker, gbc_dtPicker);
     
-//    JLabel lblNewLabel = new JLabel("Moisture level ");
-//    GridBagConstraints gbc_lblNewLabel = new GridBagConstraints();
-//    gbc_lblNewLabel.anchor = GridBagConstraints.EAST;
-//    gbc_lblNewLabel.insets = new Insets(0, 0, 5, 5);
-//    gbc_lblNewLabel.gridx = 0;
-//    gbc_lblNewLabel.gridy = 1;
-//    contentPane.add(lblNewLabel, gbc_lblNewLabel);
-//    
-//    txtNumber1 = new JTextField();
-//    txtNumber2 = new JTextField();
-//    GridBagConstraints gbc_txtNumber1 = new GridBagConstraints();
-//    gbc_txtNumber1.insets = new Insets(0, 0, 5, 0);
-//    gbc_txtNumber1.fill = GridBagConstraints.HORIZONTAL;
-//    gbc_txtNumber1.gridx = 1;
-//    gbc_txtNumber1.gridy = 1;
-//    if(plants.size()==1){
-//        Plant plant = plants.get(0);
-//        txtNumber1.setText(plant.getName());
-//    }
-//    else if(plants.size()==2){
-//        Plant plant = plants.get(0);
-//        txtNumber1.setText(plant.getName());
-//        plant = plants.get(1);
-//        txtNumber2.setText(plant.getName());
-//    }
-//    contentPane.add(txtNumber1, gbc_txtNumber1);
-//    txtNumber1.setColumns(10);
-//    
-//    
-//    GridBagConstraints gbc_txtNumber2 = new GridBagConstraints();
-//    gbc_txtNumber2.insets = new Insets(0, 0, 5, 0);
-//    gbc_txtNumber2.fill = GridBagConstraints.HORIZONTAL;
-//    gbc_txtNumber2.gridx = 1;
-//    gbc_txtNumber2.gridy = 2;
-//    contentPane.add(txtNumber2, gbc_txtNumber2);
-//    txtNumber2.setColumns(10);
+    JLabel lblNewLabel = new JLabel("Moisture level ");
+    GridBagConstraints gbc_lblNewLabel = new GridBagConstraints();
+    gbc_lblNewLabel.anchor = GridBagConstraints.EAST;
+    gbc_lblNewLabel.insets = new Insets(0, 0, 5, 5);
+    gbc_lblNewLabel.gridx = 0;
+    gbc_lblNewLabel.gridy = 1;
+    contentPane.add(lblNewLabel, gbc_lblNewLabel);
+    
+    txtNumber1 = new JTextField();
+    txtNumber2 = new JTextField();
+    GridBagConstraints gbc_txtNumber1 = new GridBagConstraints();
+    gbc_txtNumber1.insets = new Insets(0, 0, 5, 0);
+    gbc_txtNumber1.fill = GridBagConstraints.HORIZONTAL;
+    gbc_txtNumber1.gridx = 1;
+    gbc_txtNumber1.gridy = 1;
+    if(plants.size()==1){
+        Plant plant = plants.get(0);
+        txtNumber1.setText(plant.getName());
+    }
+    else if(plants.size()==2){
+        Plant plant = plants.get(0);
+        txtNumber1.setText(plant.getName());
+        plant = plants.get(1);
+        txtNumber2.setText(plant.getName());
+    }
+    contentPane.add(txtNumber1, gbc_txtNumber1);
+    txtNumber1.setColumns(10);
+    
+    
+    GridBagConstraints gbc_txtNumber2 = new GridBagConstraints();
+    gbc_txtNumber2.insets = new Insets(0, 0, 5, 0);
+    gbc_txtNumber2.fill = GridBagConstraints.HORIZONTAL;
+    gbc_txtNumber2.gridx = 1;
+    gbc_txtNumber2.gridy = 2;
+    contentPane.add(txtNumber2, gbc_txtNumber2);
+    txtNumber2.setColumns(10);
     
     btnNewButton = new JButton("Add Plant");
     btnNewButton.addActionListener(new ActionListener() {
